@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El poder de las habilidades blandas</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#071d36;
+  color:#fff;
+}
+.hero{
+  min-height:100vh;
+  padding:38px 20px 55px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:
+    radial-gradient(circle at 80% 20%,rgba(230,126,34,.28),transparent 30%),
+    radial-gradient(circle at 15% 70%,rgba(21,90,156,.55),transparent 35%),
+    linear-gradient(145deg,#06172c,#0d3760 55%,#071d36);
+}
+.container{max-width:1050px;width:100%}
+.badge{
+  display:inline-block;
+  padding:9px 18px;
+  border:1px solid #ff8a24;
+  border-radius:30px;
+  color:#ff9a3d;
+  letter-spacing:2px;
+  font-size:13px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px;
+  align-items:center;
+}
+.cover{
+  width:100%;
+  max-width:470px;
+  display:block;
+  margin:auto;
+  border-radius:14px;
+  box-shadow:0 25px 60px rgba(0,0,0,.45);
+}
+h1{
+  font-size:clamp(42px,6vw,76px);
+  line-height:.95;
+  margin:0 0 18px;
+  font-weight:900;
+  letter-spacing:-2px;
+}
+h1 span{color:#ff8424}
+.subtitle{
+  font-size:22px;
+  line-height:1.45;
+  color:#eaf3fb;
+  margin-bottom:28px;
+}
+.author{
+  font-size:17px;
+  margin-bottom:30px;
+  color:#d8e6f3;
+}
+.author strong{color:#fff}
+.btn{
+  display:inline-block;
+  background:#f47b20;
+  color:#fff;
+  text-decoration:none;
+  font-weight:800;
+  font-size:18px;
+  padding:17px 30px;
+  border-radius:10px;
+  box-shadow:0 10px 25px rgba(244,123,32,.3);
+  transition:.2s;
+}
+.btn:hover{transform:translateY(-2px);background:#ff8b2e}
+.section{
+  margin-top:55px;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:18px;
+  padding:28px;
+}
+.section h2{margin-top:0;color:#ff963d;font-size:27px}
+ul{padding-left:20px;line-height:1.8;color:#e7f0f7}
+.footer{
+  margin-top:40px;
+  padding-top:25px;
+  border-top:2px solid #f47b20;
+  color:#b8cadb;
+  font-size:14px;
+  line-height:1.7;
+}
+@media(max-width:760px){
+  .hero{padding:28px 16px 45px}
+  .grid{grid-template-columns:1fr;gap:30px}
+  .cover{max-width:360px}
+  h1{font-size:48px}
+  .subtitle{font-size:19px}
+  .section{padding:22px}
+}
+</style>
+</head>
+<body>
+<main class="hero">
+<div class="container">
+  <div class="grid">
+    <div>
+      <img class="cover" src="portada.png" alt="Portada de El poder de las habilidades blandas">
+    </div>
+    <div>
+      <div class="badge">LIBRO DIGITAL</div>
+      <h1>EL PODER DE LAS<br><span>HABILIDADES BLANDAS</span></h1>
+      <p class="subtitle">
+        Comunicar, liderar, adaptarse y construir mejores relaciones.
+      </p>
+      <p class="author">
+        <strong>Autora: Torres Marisa</strong><br>
+        Instituto Gabriela Mistral 171 — Pinamar
+      </p>
+      <a class="btn" href="libro.pdf" download>📘 DESCARGAR LIBRO COMPLETO</a>
+
+      <section class="section">
+        <h2>¿Qué vas a encontrar?</h2>
+        <ul>
+          <li>Comunicación efectiva</li>
+          <li>Inteligencia emocional</li>
+          <li>Liderazgo y trabajo en equipo</li>
+          <li>Resolución de conflictos</li>
+          <li>Adaptabilidad y resiliencia</li>
+          <li>Gestión del tiempo y pensamiento crítico</li>
+          <li>Capítulo especial sobre Daniel Goleman</li>
+          <li>Ejercicios y actividades de reflexión</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <div class="footer">
+    <strong>EL PODER DE LAS HABILIDADES BLANDAS</strong><br>
+    Un material educativo para desarrollar competencias personales, sociales y profesionales.
+    <br><br>
+    © Torres Marisa
+  </div>
+</div>
+</main>
+</body>
+</html>
